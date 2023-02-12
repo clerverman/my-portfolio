@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@layer components {
+    .item {
+      @apply text-white text-lg font-semibold capitalize  hover:underline hover:text-[#00df90] cursor-pointer;
+    }
+    .social-media {
+        @apply text-myColor cursor-pointer hover:rotate-360 duration-700 hover:scale-150  hover:text-white  text-3xl;
+    }
+    .my-portfolio{
+        @apply text-myColor font-bold capitalize text-3xl cursor-pointer hover:text-white ; 
+    }
+    .slimani-mouhcine {
+        @apply font-bold capitalize text-2xl hover:rotate-360 cursor-pointer duration-700 hover:scale-125 text-black bg-myColor p-3 rounded-full hover:text-myColor hover:bg-white ;
+    }
+    .mobile-menu {
+        @apply md:hidden fixed left-0 top-[22] bg-slate-800 w-full h-full px-14 py-10 ; 
+    }
+    .my-picture {
+        @apply  h-64 w-64  lg:h-72 lg:w-64 rounded-full hover:border-8 hover:border-[#00df90];
+    }
+    .btn {
+        @apply mt-5 w-52 rounded-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-green-400 hover:text-white duration-300 bg-myColor py-2 font-bold text-gray-600 text-xl ; 
+    }
+    .card {
+        @apply bg-gray-800 rounded-xl py-4 md:w-52 w-40 flex items-center flex-col hover:bg-slate-600 ; 
+    }
+    .card-title {
+        @apply text-white font-bold text-xl my-2 ; 
+    }
 }

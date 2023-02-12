@@ -1,0 +1,22 @@
+<div className=" w-full h-[400px] relative">
+<div className=" w-full h-[200px]"></div>
+<div className="bg-[#BDB28D] w-full flex justify-center h-[200px] ">
+    <img src={MyPic} alt="" className="absolute md:right-80 md:top-1 w-64 h-6w-64 lg:w-96 lg:h-96 rounded-full hover:border-t-8 hover:border-r-8 hover:border-l-8 hover:border-[#BDB28D]"/>
+</div>  
+    <ul className="hidden 2xl:block px-16 py-5 space-y-4  absolute md:top-20 md:left-80 hover:border-t-8 hover:border-r-8 hover:border-l-8 hover:border-[#BDB28D] bg-white rounded-tl-3xl rounded-br-3xl">
+        <li className="text-black font-bold  text-2xl">Slimani Mouhcine</li>
+        <li className="text-black font-bold  text-2xl">MQList : Software quality</li>
+        <li className="text-black font-bold  text-2xl">Studying in : FSDM</li>
+        <li className="text-black font-bold  text-2xl">1998-12-26</li>
+        <li className="text-black font-bold  text-2xl">Freelancer</li>
+    </ul> 
+</div>
+<div className=" w-full h-[200px] text-center">
+    <ul className="2xl:hidden px-16 py-5 space-y-4 ">
+        <li className="text-white font-bold  text-2xl">Slimani Mouhcine</li>
+        <li className="text-white font-bold  text-2xl">MQList : Software quality</li>
+        <li className="text-white font-bold  text-2xl">Studying in : FSDM</li>
+        <li className="text-white font-bold  text-2xl">1998-12-26</li>
+        <li className="text-white font-bold  text-2xl">Freelancer</li>
+    </ul>
+</div> 
